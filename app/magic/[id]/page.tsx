@@ -95,9 +95,8 @@ const charms = {
 }
 
 export default function CharmPage({ params }: { params: { id: string } }) {
-  const charm = charms[params.id as keyof typeof charms]
-
-  if (!charm) {
+  const id = parseInt(params.id, 10);
+  if (id < 1 || id > 5) {
     return (
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center text-red-600 mb-8">
@@ -109,6 +108,8 @@ export default function CharmPage({ params }: { params: { id: string } }) {
       </div>
     )
   }
+
+  const charm = charms[id as unknown as keyof typeof charms]
 
   const structuredData = {
     "@context": "https://schema.org",

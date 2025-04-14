@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -94,7 +95,7 @@ const charms = {
   }
 }
 
-export default function CharmPage({ params }: { params: { id: string } }) {
+export default async function CharmPage({ params }: { params: { id: string, lang: 'en' | 'zh' } }) {
   const id = parseInt(params.id, 10);
   if (id < 1 || id > 5) {
     return (
@@ -186,4 +187,18 @@ export default function CharmPage({ params }: { params: { id: string } }) {
       </div>
     </>
   )
-} 
+}
+
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'zh' }]
+}
+
+export async function generateMetadata({ params }: { params: { lang: 'en' | 'zh' } }) {
+  const dict = {
+    en: { title: 'English Site' },
+    zh: { title: '中文网站' }
+  }
+  return {
+    title: dict[params.lang].title
+  }
+}

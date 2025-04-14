@@ -1,13 +1,10 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   images: {
-    domains: ['images.unsplash.com'],
-  },
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
-}
+    unoptimized: true,
+    domains: ['images.unsplash.com']
+  }
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig;

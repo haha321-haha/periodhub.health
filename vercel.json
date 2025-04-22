@@ -41,10 +41,6 @@
         "dest": "/404.html"
       }
     ],
-    "framework": "nextjs@13.4.19",
+    "framework": "nextjs", // 修改这里
     "buildCommand": "npm run build"
-  }
-  
-  
-  
-  
+}

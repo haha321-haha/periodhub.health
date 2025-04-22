@@ -40,7 +40,9 @@
         "status": 404,
         "dest": "/404.html"
       }
-    ]
+    ],
+    "framework": "nextjs@13.4.19",
+    "buildCommand": "npm run build"
   }
   
   

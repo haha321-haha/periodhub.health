@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 根目录页面 -->
+  <url>
+    <loc>https://nodownloadgames.click/</loc>
+    <lastmod>2024-04-09</lastmod> <!-- 使用当前日期或实际修改日期 -->
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/io-games.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/about.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/privacy.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/terms.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/contact.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+
+  <!-- 分类页面 -->
+  <url>
+    <loc>https://nodownloadgames.click/categories/puzzle.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/categories/io-games.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/categories/action.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/categories/arcade.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/categories/card.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 游戏页面 -->
+  <url>
+    <loc>https://nodownloadgames.click/games/2048.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/games/battle-royale.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/games/candy-crush.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/games/memory.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/games/snake.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nodownloadgames.click/games/tetris.html</loc>
+    <lastmod>2024-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

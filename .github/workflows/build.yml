@@ -1,0 +1,29 @@
+name: Build Verification
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - uses: actions/checkout@v4
+
+      # 设置 Node.js 环境
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      # 安装依赖
+      - run: npm ci --legacy-peer-deps
+
+      # 运行 ESLint 验证
+      - run: npm run lint:verify
+
+      # 构建项目
+      - run: npm run build
+
+      # 验证导出的 HTML 文件完整性
+      - run: |
+          if [ $(find out/magic/ -name "index.html" | wc -l) -lt 5 ]; then
+            echo "Error: Missing static pages!"
+            exit 1
+          fi

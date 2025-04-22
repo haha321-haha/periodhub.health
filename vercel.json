@@ -1,44 +1,48 @@
 {
-  "rewrites": [
-    {
-      "source": "/magic/:id",
-      "destination": "/magic/[id]/index.html"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/magic/1",
-      "statusCode": 301
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
-    }
-  ],
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    }
-  ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/magic/(?<id>[^/]+)",
-      "dest": "/magic/[id]/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404.html"
-    }
-  ]
-}
+    "version": 2,
+    "rewrites": [
+      {
+        "source": "/magic/(.*)",
+        "destination": "/app/magic/[id]/page.tsx"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/(.*)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400" }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/magic/1",
+        "statusCode": 301
+      }
+    ],
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "routes": [
+      {
+        "handle": "filesystem"
+      },
+      {
+        "src": "/magic/(?<id>[^/]+)",
+        "dest": "/magic/[id]/index.html"
+      },
+      {
+        "src": "/(.*)",
+        "status": 404,
+        "dest": "/404.html"
+      }
+    ]
+  }
+  
+  
+  
+  

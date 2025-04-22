@@ -3,7 +3,7 @@
   <!-- 主页 -->
   <url>
     <loc>https://periodmagic.vercel.app/</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,19 +11,19 @@
   <!-- 主要页面 -->
   <url>
     <loc>https://periodmagic.vercel.app/magic</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://periodmagic.vercel.app/about</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://periodmagic.vercel.app/contact</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -31,32 +31,32 @@
   <!-- 符咒详情页 -->
   <url>
     <loc>https://periodmagic.vercel.app/magic/1</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://periodmagic.vercel.app/magic/2</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://periodmagic.vercel.app/magic/3</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://periodmagic.vercel.app/magic/4</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://periodmagic.vercel.app/magic/5</loc>
-    <lastmod>2024-04-10</lastmod>
+    <lastmod>2025-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-</urlset> 
+</urlset>

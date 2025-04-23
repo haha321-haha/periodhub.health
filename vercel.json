@@ -2,7 +2,7 @@
     "version": 2,
     "rewrites": [
       {
-        "source": "/magic/(.*)",
+        "source": "/magic/:id*",
         "destination": "/app/magic/[id]/page.tsx"
       }
     ],
@@ -27,20 +27,6 @@
         "use": "@vercel/static-build"
       }
     ],
-    "routes": [
-      {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/magic/(?<id>[^/]+)",
-        "dest": "/magic/[id]/index.html"
-      },
-      {
-        "src": "/(.*)",
-        "status": 404,
-        "dest": "/404.html"
-      }
-    ],
-    "framework": "nextjs",
+    "framework": "nextjs@13.4.19",
     "buildCommand": "npm run build"
   }

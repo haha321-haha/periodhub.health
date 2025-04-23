@@ -1,32 +1,38 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "rewrites": [
+    "builds": [
       {
-        "source": "/magic/:id",
-        "destination": "/magic/:id"
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist",
+          "environment": {
+            "NODE_ENV": "production"
+          }
+        }
       }
     ],
-    "headers": [
+    "routes": [
       {
-        "source": "/_next/static/(.*)",
-        "headers": [
-          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-        ]
+        "src": "/assets/(.*)",
+        "headers": {
+          "Cache-Control": "public, max-age=31536000, immutable"
+        },
+        "dest": "/assets/$1"
       },
       {
-        "source": "/(.*)",
-        "headers": [
-          { "key": "Cache-Control", "value": "public, max-age=86400" }
-        ]
+        "src": "/(.*)",
+        "dest": "/index.html",
+        "headers": {
+          "Cache-Control": "public, max-age=60"
+        }
       }
     ],
     "redirects": [
       {
-        "source": "/",
-        "destination": "/magic/1",
-        "statusCode": 302
+        "src": "/",
+        "dest": "/magic/1",
+        "status": 302
       }
-    ],
-    "framework": "nextjs",
-    "buildCommand": "npm run build"
+    ]
   }

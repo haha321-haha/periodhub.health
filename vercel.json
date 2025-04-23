@@ -1,12 +1,19 @@
 {
+    "$schema": "https://openapi.vercel.sh/vercel.json",
     "version": 2,
     "rewrites": [
       {
         "source": "/magic/:id*",
-        "destination": "/app/magic/[id]/page.tsx"
+        "destination": "/magic/:id"
       }
     ],
     "headers": [
+      {
+        "source": "/_next/static/(.*)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
       {
         "source": "/(.*)",
         "headers": [
@@ -18,15 +25,14 @@
       {
         "source": "/",
         "destination": "/magic/1",
-        "statusCode": 301
+        "statusCode": 302
       }
     ],
     "builds": [
       {
         "src": "package.json",
-        "use": "@vercel/static-build"
+        "use": "@vercel/next"
       }
     ],
-    "framework": "nextjs@13.4.19",
-    "buildCommand": "npm run build"
+    "framework": "nextjs"
   }

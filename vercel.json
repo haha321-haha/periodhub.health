@@ -1,9 +1,8 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
-    "version": 2,
     "rewrites": [
       {
-        "source": "/magic/:id*",
+        "source": "/magic/:id",
         "destination": "/magic/:id"
       }
     ],
@@ -28,11 +27,6 @@
         "statusCode": 302
       }
     ],
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/next"
-      }
-    ],
-    "framework": "nextjs"
+    "framework": "nextjs",
+    "buildCommand": "npm run build"
   }

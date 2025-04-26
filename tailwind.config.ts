@@ -1,15 +1,21 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import animate from 'tailwindcss-animate';
+import typography from '@tailwindcss/typography';
 
-export default {
+const config: Config = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './app/​**​/*.{js,ts,jsx,tsx}',
+    './project/src/​**​/*.{js,ts,jsx,tsx}',
+    './index.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+    },
   },
-  plugins: [
-    require('tailwindcss-animate'),
-    require('@tailwindcss/typography')
-  ],
-} satisfies Config
+  plugins: [animate, typography],
+};
+
+export default config;
